@@ -26,7 +26,9 @@ namespace MyCalculatorv1
             {
                 result();
             }
+#pragma warning disable CS0168 // Variable is declared but never used
             catch (Exception exc)
+#pragma warning restore CS0168 // Variable is declared but never used
             {
                 tb.Text = "Error!";
             }
